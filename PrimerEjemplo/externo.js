@@ -1,0 +1,1 @@
+alert("Alerta desde fichero externo")
