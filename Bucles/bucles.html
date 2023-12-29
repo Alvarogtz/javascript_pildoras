@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Usando Bucles</title>
+<link rel="stylesheet" href="css/micss.css">
+<script>
+
+    var articulos=["Pantalones","Zapatillas","Camiseta","Calcetines"];
+	
+</script>
+</head>
+
+<body>
+<div class="contenedor">
+  <div class="header">
+    <p class="logo">JavaScript Bucles <i class="mm">
+     </p>
+  </div>
+  <div class="contenido">
+    <div class="principal">
+      <h1>Manejando Bucles</h1>
+      <script>
+
+        articulos.unshift("Balón"); // Agrega elemento al principio
+        articulos.push("Raqueta"); // Agrega elemento al final
+
+        var contador = 0;
+        document.write("<p><strong>BUCLE WHILE</strong></p>");
+        while(contador < articulos.length){
+          document.write("<p>Articulo " + contador + "-> <strong>" + articulos[contador] + "</strong></p>");
+          contador++;
+        }
+
+        document.write("<p><strong>DO WHILE</strong></p>");
+        contador = 0;
+        do{
+          document.write("<p>Articulo " + contador + "-> <strong>" + articulos[contador] + "</strong></p>");
+          contador++;
+        }
+        while(contador < articulos.length)
+
+        document.write("<p><strong>BUCLE FOR</strong></p>");
+        for(var i = 0; i<articulos.length;i++){
+          document.write("<p>Articulo " + contador + "-> <strong>" + articulos[i] + "</strong></p>");
+        }
+
+        document.write("<p> El ultimo elemento es <strong>" + articulos[articulos.length - 1] + "</strong></p>")
+		
+	  </script>
+     </div>
+  </div>
+  
+</div>
+</body>
+</html>

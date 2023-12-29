@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <script>
+
+        function sumar(num1,num2){
+            alert("La suma es : " + (num1 + num2));
+        }
+
+        function restar(num1,num2){
+            alert("La resta es : " + (num1 - num2));
+        }
+
+        function multiplicar(num1,num2){
+            alert("La multiplicacion es : " + (num1 * num2));
+        }
+
+        function dividir(num1,num2){
+            alert("La division es : " + (num1 / num2));
+        }
+
+        var operacion=prompt("Operacion a realizar: ");
+
+        var numero1=parseFloat(prompt("Introduce el primer numero: "));
+        var numero2=parseFloat(prompt("Introduce el segundo numero: "));
+
+        if(operacion == "sumar"){
+            sumar(numero1,numero2);
+        }else if(operacion == "restar"){
+            restar(numero1,numero2);
+        }else if(operacion == "multiplicar"){
+            multiplicar(numero1,numero2);
+        }else if(operacion == "dividir"){
+            dividir(numero1,numero2);
+        }else{
+            alert("Operacion erronea")
+        }
+        
+    </script>
+</head>
+<body>
+</body>
+</html>
